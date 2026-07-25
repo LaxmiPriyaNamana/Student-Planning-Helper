@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Planner Pro</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+<!-- Navigation -->
+
+<nav>
+
+
+<h2>📚 Student Planner</h2>
+
+
+
+<div class="nav-links">
+
+<a href="index.html">
+🏠 Home
+</a>
+
+
+<a href="ai-assistant.html">
+🤖 AI Assistant
+</a>
+
+
+<a href="analytics.html">
+📊 Analytics
+</a>
+
+
+<button id="logoutBtn">
+🚪 Logout
+</button>
+
+
+</div>
+
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- Welcome -->
+
+
+<section class="welcome">
+
+
+<h1 id="userWelcome">
+👋 Welcome!
+</h1>
+
+
+<p>
+Plan your day, track progress and improve productivity.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Dashboard Cards -->
+
+
+<section class="cards">
+
+
+<div class="card blue">
+
+<h3>
+Total Tasks
+</h3>
+
+<h1 id="totalTasks">
+0
+</h1>
+
+</div>
+
+
+
+<div class="card green">
+
+<h3>
+Completed
+</h3>
+
+<h1 id="completedTasks">
+0
+</h1>
+
+</div>
+
+
+
+<div class="card orange">
+
+<h3>
+Pending
+</h3>
+
+<h1 id="pendingTasks">
+0
+</h1>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Progress -->
+
+
+<section class="progress-section">
+
+
+<h2>
+📊 Today's Progress
+</h2>
+
+
+
+<div class="progress-container">
+
+<div id="progressBar"></div>
+
+</div>
+
+
+<p id="progressText">
+0% Completed
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Search -->
+
+
+<input 
+type="text"
+id="searchInput"
+placeholder="🔍 Search tasks...">
+
+
+
+
+
+
+
+<!-- Tasks -->
+
+
+<section class="tasks">
+
+
+<h2>
+Today's Tasks
+</h2>
+
+
+
+<div class="add-task">
+
+
+<input 
+type="text"
+id="taskInput"
+placeholder="Enter task">
+
+
+
+<input 
+type="date"
+id="taskDate">
+
+
+
+<select id="taskCategory">
+
+
+<option value="Study">
+📚 Study
+</option>
+
+
+<option value="Coding">
+💻 Coding
+</option>
+
+
+<option value="Assignment">
+📝 Assignment
+</option>
+
+
+<option value="Personal">
+🎯 Personal
+</option>
+
+
+</select>
+
+
+
+
+<select id="taskPriority">
+
+
+<option value="High">
+🔴 High
+</option>
+
+
+<option value="Medium">
+🟡 Medium
+</option>
+
+
+<option value="Low">
+🟢 Low
+</option>
+
+
+</select>
+
+
+
+
+<button id="addBtn">
+
+<i class="fa-solid fa-plus"></i>
+Add
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div id="taskList">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Dark Mode -->
+
+
+<button id="darkMode">
+
+🌙 Dark Mode
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

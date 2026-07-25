@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Study Assistant</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/ai.css">
+
+</head>
+
+
+<body>
+
+
+<div class="ai-container">
+
+
+    <div class="ai-box">
+
+
+        <h1>🤖 AI Study Assistant</h1>
+
+        <p>
+            Get personalized study suggestions and improve your productivity.
+        </p>
+
+
+
+        <label>
+            How many hours can you study today?
+        </label>
+
+
+        <input 
+        type="number"
+        id="hours"
+        placeholder="Enter study hours">
+
+
+
+
+
+        <label>
+            Select your focus area
+        </label>
+
+
+        <select id="subject">
+
+
+            <option value="Programming">
+                💻 Programming
+            </option>
+
+
+            <option value="AI & ML">
+                🤖 AI & ML
+            </option>
+
+
+            <option value="Exams">
+                📚 Exam Preparation
+            </option>
+
+
+            <option value="Projects">
+                🚀 Projects
+            </option>
+
+
+        </select>
+
+
+
+
+
+        <button id="generateBtn">
+            Generate Study Plan
+        </button>
+
+
+
+
+
+        <div class="result" id="result">
+
+            Your study plan will appear here.
+
+        </div>
+
+
+
+
+        <a href="index.html">
+            ← Back to Planner
+        </a>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script src="js/ai.js"></script>
+
+
+</body>
+
+</html>
